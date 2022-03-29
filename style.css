@@ -1,0 +1,48 @@
+.menu{
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    background: rgb(231, 128, 128);
+    animation: animatsiya 4s infinite;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background: green;
+    animation: animatsiya 2s infinite;
+   
+}
+
+
+@keyframes animatsiya {
+    10%{
+        transform: translateX(200px);
+        background: red;
+    }
+    25%{
+        transform: translateX(200px) translateY(200px);
+        background: black;
+    }
+    50%{
+        transform: translateX(200px) translateY(100px);
+        background: blue;
+
+    }
+    100%{
+        transform: translateX(0px) ;
+        background: yellow;
+    }
+}
+
+/* 
+@keyframes animatsiya {
+    to{
+        transform: translateX(200px);
+        
+    }
+    from{
+        transform: translateX(0);
+    }
+} */
+
